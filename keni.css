@@ -1,0 +1,51 @@
+.card {
+float: right;
+background: #00BFFF;
+  width: 350px;
+  height: 460px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.informations {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.card img {
+  width: 40%;
+  border-radius: 50%;
+  transition: all .3s;
+}
+.card h1, .card h2 {
+  transition: all .3s;
+}
+.card h1 {
+  margin-top: 30px;
+}
+.card h2 {
+  font-size: 1.3em;
+}
+
+.card:hover img, .card:hover h1, .card:hover h2 {
+  transform: translateY(-50px);
+}
+.icon {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.icon a i {
+  margin: 10px;
+  color:#FF4500;
+  transition: all .6s;
+  transform: translateY(100px);
+}
+
+.card:hover .icon a i {
+  transform: translateY(15px);
+}
+
+

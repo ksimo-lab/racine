@@ -1,0 +1,310 @@
+ 
+ 
+ <!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="L.css">
+        
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+     <title>EGLISE C.B.N - Les Chemins de la Bonne Nouvelle</title>
+	 <link rel="shortcut icon" href="F.png"/>
+	
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+           <span class="logo navLogo"><a href="L.html">
+	<img src="download_1.gif" height=126px width=265px ></a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">EGLISE_C.B.N</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                   <a href="CBN.html">
+					<span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  C.B.N
+  </a></li>
+                   
+                    
+                  <a href="#">
+					<span></span>
+					<span></span>
+				    <span></span>
+					<span></span>
+					EFISH</a></li>
+					
+					<a href="don.html">
+					<span></span>
+					<span></span>
+				    <span></span>
+					<span></span>
+					DON</a></li>
+                   
+				   
+				
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<script>
+
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
+
+
+</script>
+
+ <br><br><br><br>
+ <link rel="stylesheet" href="FAQ.css">
+ <link rel="stylesheet" href="L.css">
+ <link rel="stylesheet" href="O.css">
+<br><br><div class="text-responsive">
+<h1 style="color:##;"><center><b>CHOISIS TON THEME ! ! !</center></b></font></h1>
+<div class="text-responsive">
+
+ <center><iframe src="https://www.youtube.com/embed/4WKf0f3HGt0" height=280px width= 400px allowfullscreen></iframe></center>
+ </div>
+ 
+ 
+ <br><h6 style="color:black;"><font size="6"><center>Mec ou Fille ?</h1></font></h6></center></br>
+ </u>
+<h5 style="color:black;"><font size="6"><center><u>LES MECS</u></h1></font></h5></center></br>
+<center>                    
+<a href="foi.html" class="bouton4"><center><font size="4"><br>La foi</center></a></font>
+<a href="église.html" class="bouton4"><center><font size="4"><br>L'église</center></a></font>
+<a href="salut.html" class="bouton4"><center><font size="4"><br>Le salut </center></a></font>
+
+
+<br><br><br>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>L'amour </center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>Amitié</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>La joie</center></a></font>
+
+<br><br><br>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>La prière </center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>Famille recomposée</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>Le divorce</center></a></font>
+
+
+<br><br><br>
+<a href="drogues et alcools.html" class="bouton4"><center><font size="4"><br>drogues et alcools</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>Le suicide</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>Le racisme</center></a></font>
+
+<br><br><br>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>L'harcèlement </center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>La rivalité (fratrie)</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>L'échec</center></a></font>
+
+
+<br><br><br>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>La masturbation</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>La pornographie</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>Le monde virtuel</center></a></font>
+
+
+<br><br><br><br>
+<h5 style="color:black;"><font size="6"><center>LES FILLES</h1></font></h5></center></br></font>
+<center>                    
+<a href="foi.html" class="bouton4"><center><font size="4"><br>La foi</center></a></font>
+<a href="église.html" class="bouton4"><center><font size="4"><br>L'église</center></a></font>
+<a href="salut.html" class="bouton4"><center><font size="4"><br>Le salut </center></a></font>
+<br><br><br>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>Les garçons</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>Déceptions amoureuses</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>Grossesse non désirée</center></a></font>
+
+<br><br><br>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>Les mauvaises langues</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>Les bandes</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>La jalousie</center></a></font>
+
+
+<br><br><br>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>La manipulation</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>La décence</center></a></font>
+<a href="FAQ.html" class="bouton4"><center><font size="4"><br>La sexualité</center></a></font>
+
+
+
+<br><br>
+<center><img src="^.png" height=60px width=60px><font size="7"></font><br><a href="FAQ.html">&nbsp;&nbsp;&nbsp;&nbsp;REMONTER</a></center>
+
+<br>
+<a href="liens.html"><center>&nbsp;&nbsp;&nbsp;&nbsp;RETOUR EN ARRIERE</a></center>
+
+
+
+
+<br><br>		 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS_1/styles.css">
+</head>
+<body>
+
+
+  </div>
+</body>
+</html>
+	
+	<html>
+	<link rel="stylesheet" href="CSS_1/pied.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	</head>
+	<body>
+	
+	<footer class="footer">
+	<div class="container">
+	<div class="row">
+	<div class="footer-col">
+	<h5>l'Eglise C.B.N</h5>
+	<ul>
+	<li></a></li>
+
+	<li><a href="#">Adresse</a></li>
+	<li><a href="#">Aide ?</a></li>
+	</ul>
+	</div>
+	<div class="footer-col">
+	<h5>VOUS SOUHAITEZ...</h5>
+	<ul>
+	<li><a href="#"> DON</a></li>
+	<li><a href="#">Participer</a></li>
+    <li><a href="#">Contacter</a></li>
+	
+	
+	</ul>
+	</div>
+	<div class="footer-col">
+	<h5>A PROPOS</h5>
+	<ul>
+	<li><a href="#">Mission</a></li>
+	<li><a href="#">Confidentialité</a></li>
+	<li><a href="#">Conditions G</a></li>
+	<li><a href="#">Cookies</a></li>
+	
+	
+	</ul>
+	</div>
+	<div class="footer-col">
+	<h5>SUIVEZ-NOUS SUR...</h5>
+	
+	<BR><a href="L.html"><img src="VEKTOR ICON7.png" height=35px width=30px ><font size="3"><u>CBN@facebook</u></a><br>
+	<BR><a href="L.html"><img src="Insta.png" height=35px width=30px ><font size="3"><u>CBN@Instagram</u></a><br>
+	<BR><a href="L.html"><img src="twitter.png" height=39px width=30px ><font size="3"><u>CBN@Twitter</u></a><br>
+	
+	</html>
+	</div>
+	<br>
+	
+	<link rel="stylesheet" href="css/new 1.css">
+	<!-- Fontawesome CDN Link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+	<footer>
+	</ul>
+	</div>
+	</div>
+	
+	<center>©2024 Eglise C.B.N- Tous droits réservés- <u>Notions légales</u>-<u>Données personnelles</u></center>
+	
+	</footer>
+	
+	
+	</div>
+	
+	
+	</body>
+	</html>
+
+
+   
+
+
+
+

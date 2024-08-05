@@ -1,0 +1,25 @@
+
+
+.marquee {
+  width: 80%;
+  background: #FA8072;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee div {
+  font-size: 2rem;
+  font-family: fantasy;
+  padding-left: 100%;
+  
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+

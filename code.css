@@ -1,0 +1,37 @@
+* {
+	margin
+	padding
+	box-sizing:border-box
+	
+}
+
+body{
+	height:100vh;
+	display:grid;
+    place-items:centers;
+	background-color:
+	
+}
+
+.bell-notifications{
+	position:relative;
+}
+
+.bell-notifications::after{
+	content:attr(counter);
+	position:absolute;
+	width:64px;
+	height:64px;
+	border-radius:50px;
+	background:red;
+	top:7%;
+	right:23%;
+	border:8px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:25px;
+	color:25pix;
+	font-family:sans-serif;
+	
+

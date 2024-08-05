@@ -1,0 +1,122 @@
+
+
+
+h1{
+  font-family: cursive;
+  font-size: 3rem;
+  background: rgb(131,58,180);
+  background-image: linear-gradient(90deg, #FF8C00 0%, #FF8C00 20%, #FFA500 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4{
+  font-family: cursive;
+  font-size: 1.5rem;
+  background: rgb(131,58,180);
+  background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  
+}
+
+h5{
+  font-family: system-ui;
+  font-size: 1.7rem;
+  background: rgb(131,58,180);
+  background-image: #DC143C;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+body {
+  margin: 0;
+  margin-bottom: 25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-wrapper > .content {
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  background: rgb(255,218,185);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+  transition: 200ms ease-in-out;
+  height:525px;
+}
+
+.img-wrapper:hover > img.blur {
+  filter: blur(5px);
+}
+
+.img-wrapper:hover > img.gray {
+  filter: grayscale(1);
+}
+
+.img-wrapper:hover > img.zoom {
+  transform: scale(1.1);
+}
+
+.img-wrapper > .content.fade {
+  opacity: 0;
+}
+.img-wrapper:hover > .content.fade {
+  opacity: 1;
+}
+
+.img-wrapper > .content.slide-left {
+  transform: translateX(-100%);
+}
+.img-wrapper:hover > .content.slide-left {
+  transform: translateX(0);
+}
+
+.img-wrapper > .content.slide-right {
+  transform: translateX(100%);
+}
+.img-wrapper:hover > .content.slide-right {
+  transform: translateX(0);
+}
+
+.img-wrapper > .content.slide-down {
+  transform: translateY(-100%);
+}
+.img-wrapper:hover > .content.slide-down {
+  transform: translateY(0);
+}
+
+.img-wrapper > .content.slide-up {
+  transform: translateY(100%);
+}
+.img-wrapper:hover > .content.slide-up {
+  transform: translateY(0);
+}

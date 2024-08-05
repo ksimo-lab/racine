@@ -1,0 +1,274 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LE "FISH DONUT"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dons.css" />
+  </head>
+  
+  <!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="L.css">
+        
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+     <title>EGLISE C.B.N - Les Chemins de la Bonne Nouvelle</title>
+	 <link rel="shortcut icon" href="F.png"/>
+	
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+           <span class="logo navLogo"><a href="L.html">
+	<img src="download_1.gif" height=123px width=265px ></a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">EGLISE_C.B.N</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                   <a href="CBN.html">
+					<span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  C.B.N
+  </a></li>
+                    <a href="#">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+                    MESSAGES</a></li>
+                  <a href="#">
+					<span></span>
+					<span></span>
+				    <span></span>
+					<span></span>
+					EFISH</a></li>
+					
+					<a href="#">
+					<span></span>
+					<span></span>
+				    <span></span>
+					<span></span>
+					DON</a></li>
+                   
+				   
+				
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<script>
+
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
+
+
+</script>
+<br><br><br><br><br>
+<link rel="stylesheet" href="T.css">
+<div class="video-container">
+   <center><video autoplay muted controls loop width=60% height=10% src="FIN_KENI_FINAL.mp4">Ici la description alternative</video></center>
+  
+  <body>
+  <link rel="stylesheet" href="dons.css">
+    
+	<h2 class="chart-heading">Le&nbsp;<u>"FISH DONUT"</u></h2>
+    <div class="programming-stats">
+      <div class="chart-container">
+        <canvas class="my-chart"></canvas>
+      </div>
+
+      <div class="details">
+        <ul></ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dons.js"></script>
+	
+<br><br><link rel="stylesheet" href="FAQ.css">
+
+<center><h3><font size="5"> Ca y est ? Tu es éxité par ces projets ? Fais un don pour que ces projets prennent vies !</font></u></h3></center>	
+	
+	<center><a href="#l" class="bouton4"><center><font size="4"><br>FAIRE UN DON !</center></a></font>
+  </body>
+</html>
+
+<br><br><br><center><img src="^.png" height=60px width=60px><font size="7"></font><br><a href="L.html">&nbsp;&nbsp;&nbsp;&nbsp;REMONTER</a></center>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS_1/styles.css">
+</head>
+<body>
+
+
+  </div>
+</body>
+</html>
+	
+	<html>
+	<link rel="stylesheet" href="CSS_1/pied.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	</head>
+	<body>
+	
+	<footer class="footer">
+	<div class="container">
+	<div class="row">
+	<div class="footer-col">
+	<h5>l'Eglise C.B.N</h5>
+	<ul>
+	<li></a></li>
+
+	<li><a href="#">Adresse</a></li>
+	<li><a href="#">Aide ?</a></li>
+	</ul>
+	</div>
+	<div class="footer-col">
+	<h5>VOUS SOUHAITEZ...</h5>
+	<ul>
+	<li><a href="#"> DON</a></li>
+	<li><a href="#">Participer</a></li>
+    <li><a href="#">Contacter</a></li>
+	
+	
+	</ul>
+	</div>
+	<div class="footer-col">
+	<h5>A PROPOS</h5>
+	<ul>
+	<li><a href="#">Mission</a></li>
+	<li><a href="#">Confidentialité</a></li>
+	<li><a href="#">Conditions G</a></li>
+	<li><a href="#">Cookies</a></li>
+	
+	
+	</ul>
+	</div>
+	<div class="footer-col">
+	<h5>SUIVEZ-NOUS SUR...</h5>
+	
+	<center><BR><div class="fab fa-twitter"></div><a href="L.html"><font size="3">CBN@TWITTER</a><br>
+	<center><BR><div class="fab fa-instagram"></div><a href="L.html"><font size="3">CBN@INSTAGRAM</a><br>
+	<center><BR><div class="fab fa-facebook"></div><a href="L.html"><font size="3">CBN@FACEBOOK</a><br>
+	
+	</html>
+	</div>
+	<br>
+	
+	<link rel="stylesheet" href="css/new 1.css">
+	<!-- Fontawesome CDN Link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+	<footer>
+	</ul>
+	</div>
+	</div>
+	
+	<center><font color="black">©2024 Eglise C.B.N- Tous droits réservés- <u>Notions légales</u>-<u>Données personnelles</u></center>
+	
+	</footer>
+	
+	
+	</div>
+	
+	
+	</body>
+	</html>
+

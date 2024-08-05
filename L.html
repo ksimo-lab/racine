@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="L.css">
+        
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+     <title>EGLISE C.B.N - Les Chemins de la Bonne Nouvelle</title>
+	 <link rel="shortcut icon" href="F.png"/>
+	
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+           <span class="logo navLogo"><a href="L.html">
+	<img src="download_1.gif" height=126px width=265px ></a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">EGLISE_C.B.N</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                   <a href="CBN.html">
+					<span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  C.B.N
+  </a></li>
+                    
+	<a href="#L">
+	<span></span>
+	<span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+ PROJETS
+  </a></li>   
+                 <a href="#K">
+				 <span></span>
+	             <span></span>
+                    
+				<span></span>
+				<span></span>
+				<span></span>
+                    EVENTS</a></li>
+                  <a href="#">
+					<span></span>
+					<span></span>
+				    <span></span>
+					<span></span>
+					EFISH</a></li>
+					
+					<a href="don.html">
+					<span></span>
+					<span></span>
+				    <span></span>
+					<span></span>
+					DON</a></li>
+                   
+				   
+				
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<script>
+
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
+
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
+
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+
+
+
+</script>
+<html>
+	<br><br><br><br><head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="L.css">
+	</head>
+
+<div class="slider">
+	<div class="slide_viewer">
+	<div class="slide_group">
+	<div class="slide">
+
+	<a href="http://www.adresse-de-votre-choix.com/"><img src="N.gif" height=1000px width=680px alt="slider1">
+	</a>
+	</div>
+	
+	</div>
+	<div class="slide">
+	<a href="http://www.adresse-de-votre-choix.com/"><img src="M.png" height=9300px width=680px  alt="slider2">
+	</a>
+	</div>
+	
+	<div class="slide" >
+	<a href="http://www.adresse-de-votre-choix.com/"><img src="SKY_VIEW.gif " height=8900px width=680px alt="slider4">
+	</a>
+	</div>
+	
+	<div class="slide" >
+	<a href="http://www.adresse-de-votre-choix.com/"><img src="INSCRIPTIONS.gif" height=8900px width=680px alt="slider6">
+	</a>
+	</div>
+	
+	
+	
+	
+	
+
+
+	
+	
+	</div>
+	</div>
+	</div>
+
+
+	<div class="slide_buttons">
+	</div>
+	<div class="previous_btn" title="Previous">
+	<br><br><br><br><br><br><br><br><br><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66">
+	<g>
+	<g>
+	<path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
+	c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
+	<path fill="#474544" d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0 c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564 c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
+	</g>
+	</g>
+	</svg>
+	</div>
+	<div class="next_btn" title="Next">
+	<br><br><br><br><br><br><br><br><br><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="65px" height="65px" viewBox="-11 -11.5 65 66"></tyle>
+	<g>
+	<g>
+	<path fill="#474544" d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5 c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288 c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
+	<path fill="#474544" d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035 L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
+	</g>
+	</g>
+	
+	</svg>
+	</div>
+	</div><!-- End // .directional_nav -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+	
+	
+	
+	
+	
+	<script>
+	
+	$('.slider').each(function() {
+	var $this = $(this);
+	var $group = $this.find('.slide_group');
+	var $slides = $this.find('.slide');
+	var bulletArray = [];
+	var currentIndex = 0;
+	var timeout;
+	
+	function move(newIndex) {
+	var animateLeft, slideLeft;
+	
+	advance();
+	
+	if ($group.is(':animated') || currentIndex === newIndex) {
+	return;
+	}
+	
+	bulletArray[currentIndex].removeClass('active');
+	bulletArray[newIndex].addClass('active');
+	
+	if (newIndex > currentIndex) {
+	slideLeft = '100%';
+	animateLeft = '-100%';
+	} else {
+	slideLeft = '-100%';
+	animateLeft = '100%';
+	}
+	
+	$slides.eq(newIndex).css({
+	display: 'block',
+	left: slideLeft
+	});
+	$group.animate({
+	left: animateLeft
+	}, function() {
+	$slides.eq(currentIndex).css({
+	display: 'none'
+	});
+	$slides.eq(newIndex).css({
+	left: 0
+	});
+	$group.css({
+	left: 0
+	});
+	currentIndex = newIndex;
+	});
+	}
+	
+	function advance() {
+	clearTimeout(timeout);
+	timeout = setTimeout(function() {
+	if (currentIndex < ($slides.length - 1)) {
+	move(currentIndex + 1);
+	} else {
+	move(0);
+	}
+	}, 4000);
+	}
+	
+	$('.next_btn').on('click', function() {
+	if (currentIndex < ($slides.length - 1)) {
+	move(currentIndex + 1);
+	} else {
+	move(0);
+	}
+	});
+	
+	$('.previous_btn').on('click', function() {
+	if (currentIndex !== 0) {
+	move(currentIndex - 1);
+	} else {
+	move(3);
+	}
+	});
+	
+	$.each($slides, function(index) {
+	var $button = $('<a class="slide_btn">&bull;</a>');
+	
+	if (index === currentIndex) {
+	$button.addClass('active');
+	}
+	$button.on('click', function() {
+	move(index);
+	}).appendTo('.slide_buttons');
+	bulletArray.push($button);
+	});
+	
+	advance();
+	});
+	</script>
+	
+	
+<br><br><br><br><br><div class="slide_buttons">
+<head>
+        <title>Sliding text</title>
+        <link rel="stylesheet" href="SlidingText.css"/>
+        <link href="Pasteur.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="marquee-w">
+            <div class="marquee">
+                <span>Notre devise: 1 objectif , plusieurs chemins !&nbsp;&nbsp;&nbsp;</span>
+            </div>
+            <div class="marquee marquee2">
+                <span>Notre devise: 1 objectif , plusieurs chemins !&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </body>
+<a href="JCK.html" class="bouton2"><center><font size="6"><br>JCK<br> PRODUCTION</center></a></font>
+<a href="liens.html" class="bouton2"><center><font size="6"><br>C-TEACH</center></a></font>
+<br><a href="jeux interactifs.html" class="bouton2"><center><font size="6"><br>MUSIC </center></a></font>
+<a href="w.html" class="bouton2"><center><font size="6"><br>GAMES </center></a></font>
+
+<br><center><h2 id="L"><h2 style="color:#32CD32;"><center><u><font size="7"></font></u></h2></center>
+
+<br><br><br><br><br><center><img src="C.B.N_project.png" height=100px width=410px ></center></a>
+ <div class="">
+
+<link rel="stylesheet" href="L.css">
+ <center><h6><font size="6">Découvrez tous les <span style="background:#2BFAFA">grands</span> <span style="background:#FFD700"><u><b><font size="7">PROJETS</font></u></b></span> de l’église C.B.N destinés aux <span style="background:#FFA500">jeunes</span> pour répandre la 
+ <span style="background:#00FF00">bonne nouvelle</span> dans le monde et changer <span style="background:#00FF00">des vies ! ! !</span></font> 
+ <BR> <a href="I.html" class="bouton4"><center><font size="6">EN SAVOIR PLUS</center></a></font>          
+          </h6></center>  
+           
+ 
+<link rel="stylesheet" href="O.css">
+<div class="text-responsive">
+<h1 style="color:#FFA500;"><h1 id="K"><center><img src="évènements.png" height=50% width=50% ></center></font>
+<div class="text-responsive">
+<h2 style="color:black;"><font size="6"><center>Ne manquez pas les prochains rendez-vous de L'église C.B.N !</h1></font></h6></center>
+
+      <link rel="stylesheet" href="y.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="cards">
+         <h5 class="header">
+          
+         </h5>
+         <div class="services">
+            <div class="content content-1">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height=50px><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"/></svg>
+               <h5>
+                 <center>16 juin 2024</center>
+               </h5>
+               <p>
+                  Live Jeune & Prière 
+			   </p>
+               <a href="#">VOIR</a>
+            </div>
+            <div class="content content-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height=50px><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"/></svg>
+               <h5>
+                <center>16- 24 juin 2024</center>
+               </h5>
+               <p>
+                 Baptême d'eau à L'église
+               </p>
+               <a href="#">VOIR</a>
+            </div>
+            <div class="content content-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height=50px><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z"/></svg>
+               <h5>
+                  <center>6 juillet 2024</center>
+               </h5>
+               <p>
+                  Teen Day 2.0
+               </p>
+               <a href="#">VOIR</a>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+
+
+<center><img src="^.png" height=60px width=60px><font size="7"></font><br><a href="L.html">&nbsp;&nbsp;&nbsp;&nbsp;REMONTER</a></center>
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS_1/styles.css">
+</head>
+<body>
+
+
+  </div>
+</body>
+</html>
+	
+	<html>
+	<link rel="stylesheet" href="CSS_1/pied.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	</head>
+	<body>
+	
+	<footer class="footer">
+	<div class="container">
+	<div class="row">
+	<div class="footer-col">
+	<h5>l'Eglise C.B.N</h5>
+	<ul>
+	<li></a></li>
+
+	<li><a href="#">Adresse</a></li>
+	<li><a href="#">Aide ?</a></li>
+	</ul>
+	</div>
+	<div class="footer-col">
+	<h5>VOUS SOUHAITEZ...</h5>
+	<ul>
+	<li><a href="#"> DON</a></li>
+	<li><a href="#">Participer</a></li>
+    <li><a href="#">Contacter</a></li>
+	
+	
+	</ul>
+	</div>
+	<div class="footer-col">
+	<h5>A PROPOS</h5>
+	<ul>
+	<li><a href="#">Mission</a></li>
+	<li><a href="#">Confidentialité</a></li>
+	<li><a href="#">Conditions G</a></li>
+	<li><a href="#">Cookies</a></li>
+	
+	
+	</ul>
+	</div>
+	<div class="footer-col">
+	<h5>SUIVEZ-NOUS SUR...</h5>
+	
+	<center><BR><div class="fab fa-twitter"></div><a href="L.html"><font size="3">CBN@TWITTER</a><br>
+	<center><BR><div class="fab fa-instagram"></div><a href="L.html"><font size="3">CBN@INSTAGRAM</a><br>
+	<center><BR><div class="fab fa-facebook"></div><a href="L.html"><font size="3">CBN@FACEBOOK</a><br>
+	
+	</html>
+	</div>
+	<br>
+	
+	<link rel="stylesheet" href="css/new 1.css">
+	<!-- Fontawesome CDN Link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+	<footer>
+	</ul>
+	</div>
+	</div>
+	
+	<center><font color="black">©2024 Eglise C.B.N- Tous droits réservés- <u>Notions légales</u>-<u>Données personnelles</u></center>
+	
+	</footer>
+	
+	
+	</div>
+	
+	
+	</body>
+	</html>
+
